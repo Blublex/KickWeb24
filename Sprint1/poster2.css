@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Figtree', sans-serif;
+    
+}
+
+:root {
+    /* Custom Properties */
+    --background: #001B44;
+    --red: #FC151F;
+    --font-size1: 6em;
+    --font-size2: 0.75em;
+}
+
+/* 6x6 Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 2fr 1fr 2fr 1fr 2fr 2fr 0.5fr;
+    grid-template-rows: 0.5fr 1fr 2fr 2fr 1.75fr 2fr 1.75fr 2fr 1.75fr 2fr  2fr 1fr 0.5fr;
+    gap: 0;
+    height: 100vh;
+    
+    color: var(--red);
+    position: relative;
+   
+}
+
+.grid-item {
+    grid-column: 8/9;
+    grid-row: 2/3;
+    align-self: start; 
+    justify-self: end; 
+    transform: scaleY(1);
+}
+
+.item-1 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    font-size: var(--font-size1);
+    align-self: start;
+    justify-self: center;
+    transform: scaleY(1.5) scaleX(1.5);
+    
+}
+
+.item-2 {
+    grid-column: 5/6;
+    grid-row: 4/5;
+    font-size: var(--font-size1);
+    align-self: start;
+    justify-self: center;
+    transform: scaleY(1.5) scaleX(1.5);
+}
+
+.item-3 {
+    grid-column: 8/9;
+    grid-row: 4/5;
+    font-size: var(--font-size1);
+    align-self: start;
+    justify-self: center;
+    transform: scaleY(1.5) scaleX(1.75);
+}
+
+.item-4 {
+    grid-column: 2/3;
+    grid-row: 6/7;
+    font-size: var(--font-size1);
+    align-self: end;
+    justify-self: center;
+    transform: scaleY(1.5) scaleX(1.5);
+}
+
+.item-5 {
+    grid-column: 5/6;
+    grid-row: 6/7;
+    font-size: var(--font-size1);
+    align-self: end;
+    justify-self: center;
+    transform: scaleY(1.5) scaleX(1.5);
+}
+
+.item-6 {
+    grid-column: 8/9;
+    grid-row: 6/7;
+    font-size: var(--font-size1);
+    align-self: end;
+    justify-self: center;
+    transform: scaleY(1.5) scaleX(1.5);
+}
+
+.item-7 {
+    grid-column: 2/3;
+    grid-row: 8/9;
+    font-size: var(--font-size1);
+    align-self: start;
+    justify-self: center;
+    transform: scaleY(1.5) scaleX(1.5);
+}
+
+.item-8 {
+    grid-column: 5/6;
+    grid-row: 8/9;
+    font-size: var(--font-size1);
+    align-self: start;
+    justify-self: center;
+    transform: scaleY(1.5) scaleX(1.5);
+}
+
+.item-9 {
+    grid-column: 8/9;
+    grid-row: 8/9;
+    font-size: var(--font-size1);
+    justify-self: center;
+    transform: scaleY(1.5) scaleX(1.5);
+}
+
+.item-10 {
+    grid-column: 2/3;
+    grid-row: 10/11;
+    font-size: var(--font-size1);
+    align-self: start;
+    justify-self: center;
+    transform: scaleY(1.5) scaleX(1.75);
+}
+
+.item-11 {
+    grid-column: 5/6;
+    grid-row: 10/11;
+    font-size: var(--font-size1);
+    align-self: start;
+    justify-self: center;
+    transform: scaleY(1.5) scaleX(1.5);
+}
+
+.item-12 {
+    grid-column: 8/9;
+    grid-row: 10/11;
+    font-size: var(--font-size1);
+    align-self: start;
+    justify-self: center;
+    transform: scaleY(1.5) scaleX(1.5);
+}
+
+/* kleine Beschriftung (Text) */
+
+.item-13 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: var(--font-size2);
+    align-self: start;
+    justify-self: center;
+    
+}
+
+.item-14 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    font-size: var(--font-size2);
+    align-self: start;
+    justify-self: start;
+}
+
+.item-15 {
+    grid-column: 3/4;
+    grid-row: 8/9;
+    font-size: var(--font-size2);
+    align-self: start;
+    justify-self: start;
+}
+
+#grid-container .item-15::first-letter {
+    font-size: 10rem
+}
+
+.item-16 {
+    grid-column: 3/4;
+    grid-row: 12/13;
+    font-size: var(--font-size2);
+    align-self: start;
+    justify-self: start;
+}
+
+.item-17 {
+    grid-column: 4/5;
+    grid-row: 4/5;
+    font-size: 1.75em;
+    align-self: start;
+    justify-self: center;
+}
+
+.item-18 {
+    grid-column: 4/5;
+    grid-row: 6/7;
+    font-size: 1.75em;
+    align-self: end;
+    justify-self: center;
+}
+
+.item-19 {
+    grid-column: 4/5;
+    grid-row: 10/11;
+    font-size: 1.75em;
+    align-self: start;
+    justify-self: center;
+}
+
+.item-20 {
+    grid-column: 7/8;
+    grid-row: 2/3;
+    font-size: var(--font-size2);
+    align-self: start;
+    justify-self: start;
+}
+
+.item-21 {
+    grid-column: 7/8;
+    grid-row: 4/5;
+    font-size: var(--font-size2);
+    align-self: start;
+    justify-self: start;
+}
+
+.item-22 {
+    grid-column: 7/8;
+    grid-row: 6/7;
+    font-size: 1.75em;
+    font-weight: bold;
+    align-self: end;
+    justify-self: start;
+}
+
+.item-23 {
+    grid-column: 7/8;
+    grid-row: 8/9;
+    font-size: var(--font-size2);
+    align-self: start;
+    justify-self: start;
+}
+
+.item-24 {
+    grid-column: 7/8;
+    grid-row: 10/11;
+    font-size: var(--font-size2);
+    align-self: start;
+    justify-self: start;
+}
+
+.item-25 {
+    grid-column: 7/8;
+    grid-row: 12/13;
+    font-size: var(--font-size2);
+    align-self: start;
+    justify-self: start;
+}
+
+.item-26 {
+    grid-column: 8/9;
+    grid-row: 2/3;
+    font-size: var(--font-size2);
+    align-self: start;
+    justify-self: end;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    padding-left: 35px;
+}
+
+.item-27 {
+    grid-column: 5/ span 7;
+    grid-row: 2/3;
+    font-size: var(--font-size2);
+    align-self: start;
+    justify-self: start;
+    padding-left: 125px;
+}
