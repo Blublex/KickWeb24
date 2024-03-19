@@ -1,7 +1,9 @@
 # KickWeb24
 Modul: KickWeb24_Plakat_Abgabeordner
 
-[Plakat](Sprint1/index.html){:target="_blank"}
+[Poster](Sprint1/index.html){:target="_blank"}
+
+[Entwürfe](Sprint1/DreiEntwuerfe_Poster.pdf){:target="_blank"}
 
 [Tag 1](Arbeitsprozess/tag1/index.html){:target="_blank"}
 
