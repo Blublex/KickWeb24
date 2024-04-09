@@ -1,0 +1,91 @@
+:root {
+  --background: #001B44;
+  --red: #FC151F;
+  --font-size1: 2em;
+  --font-size2: 0.5em;
+  --font-size3: 1.3em;
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+  color: var(--red);
+}
+
+.menu-wrapper {
+  position: relative;
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--red);
+}
+
+.menu {
+  position: fixed;
+  bottom: -100%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  background: var(--background);
+  z-index: 500;
+  transform: translate(-50%, 0);
+  transition: transform 0.3s ease, bottom 0.3s ease;
+}
+
+.menu.active {
+  bottom: 0;
+  transform: translate(-50%, -50%);
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  gap: 6em;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: var(--red);
+  font-size: var(--font-size1);
+  font-weight: bold;
+}
+
+.submenu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.submenu li {
+  margin: 10px 0;
+}
+
+.submenu a {
+  text-decoration: none;
+  color: var(--red);
+  font-size: var(--font-size3);
+  font-weight: normal;
+  transition: color 0.3s ease;
+}
+
+.submenu a:hover,
+.submenu a:focus {
+  color: #fff;
+}

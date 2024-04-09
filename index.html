@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="menu-wrapper">
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <nav class="menu">
+        <ul class="menu-items">
+            <li class="menu-item has-submenu">
+                <a href="#">PROZESS</a>
+                <ul class="submenu">
+                    <li><a href="prozess/Ausgangslage/Ausgangslage_1.jpeg">Ausgangslage 1</a></li> 
+                    <li><a href="prozess/Arbeitsschritte/schritt1.html">Poster 1</a></li> 
+                    <li><a href="prozess/Ausgangslage/Ausgangslage_2.jpeg">Ausgangslage 2</a></li>
+                    <li><a href="prozess/Arbeitsschritte/schritt2.html">Poster 2</a></li>
+                    <li><a href="prozess/Arbeitsschritte/schritt3.html">Poster 2.1</a></li>
+                    <li><a href="prozess/Arbeitsschritte/schritt4.html">Poster 2.3</a></li>
+                    <li><a href="prozess/Arbeitsschritte/schritt5.html">Poster 2.4</a></li>
+                    <li><a href="prozess/Übungen/index.html">Übung Testing</a></li>
+                    <li><a href="prozess/Übungen/flex.html">Übung Flexbox</a></li>
+                    <li><a href="prozess/Übungen/grid.html">Übung Grid</a></li>
+                    <li><a href="prozess/Übungen/CSS-Animation.html">Übung Animation</a></li>
+                </ul>
+            </li>
+            <li class="menu-item has-submenu">
+                <a href="#">SPRINT 1</a>
+                <ul class="submenu">
+                    <li><a href="sprint1/sprint1.html">Fluid-Poster</a></li> 
+                    <li><a href="sprint1/Entwürfe.pdf">Entwürfe PDF</a></li> 
+                </ul>
+            </li>
+            <li class="menu-item has-submenu">
+                <a href="#">SPRINT 2</a>
+                <ul class="submenu">
+                    <li><a href="sprint2/final.html">Final-Poster</a></li> 
+                    <li><a href="sprint2/experiment1.html">Experiment V1</a></li> 
+                    <li><a href="sprint2/experiment2.html">Experiment V2</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<script>
+    function toggleMenu() {
+        document.querySelector('.menu').classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
+
