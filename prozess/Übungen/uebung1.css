@@ -1,0 +1,32 @@
+/*-----Tags----*/
+body{ 
+    background-color: lightblue;
+    
+}
+
+h1{
+    color: red;
+    text-align: center;
+    
+}
+
+p{
+    font-family: verdana;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/*-----ID----*/
+#poetry{
+
+}
+
+/*-----Klassen----*/
+.first{
+}
+.second{
+
+}
+.third{
+
+}

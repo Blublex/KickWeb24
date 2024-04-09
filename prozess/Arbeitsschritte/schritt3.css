@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    /* Custom Properties */
+    --background: #001B44;
+    --red: #FC151F;
+    --font-size1: 6em;
+    --font-size2: 0.75em;
+}
+
+
+body {
+  background-color: #00008B;
+  margin: 0;
+  font-family: 'Figtree', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Zentrierung vertikal */
+}
+
+
+.container {
+  position: relative;
+  width: 250px; 
+  height: 250px; 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 150px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+
+.letter {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  color: red;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+}
+
+.new-letter {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  color: red;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease 0s, transform 0.5s ease;
+  text-transform: uppercase;
+}
+
+#letter1 {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+#letter2 {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.container:hover #letter1 {
+  transform: translate(404%, -310%);
+}
+
+.container:hover #letter2 {
+  transform: translate(-413%, 290%);
+}
+
+.container:hover .new-letter {
+  opacity: 1; /* Bei Hover sichtbar machen */
+  transform: scale(1.2); /* "pop"-Effekt */
+}
+
+#letterF {
+  grid-column: 1;
+  grid-row: 1;
+  transition-delay: 0.3s;
+}
+
+#letterL {
+  grid-column: 2;
+  grid-row: 1;
+  transition-delay: 0.6s;
+}
+
+#letterW1 {
+  grid-column: 1;
+  grid-row: 3; 
+  transition-delay: 0.9s;
+}
+
+#letterE {
+  grid-column: 2; 
+  grid-row: 3; 
+  transition-delay: 1.2s;
+}
+
+#letterR1 {
+  grid-column: 3;
+  grid-row: 3; 
+  transition-delay: 1.5s;
+}
+
+#letterS {
+  grid-column: 1; 
+  grid-row: 5; 
+  transition-delay: 1.8s; 
+}
+
+#letterW2 {
+  grid-column: 2; 
+  grid-row: 5; 
+  transition-delay: 2.1s; 
+}
+
+#bindestrich {
+  grid-column: 3; 
+  grid-row: 5; 
+  transition-delay: 2.1s; 
+
+}
+#letterR2 {
+  grid-column: 2; 
+  grid-row: 7; 
+  transition-delay: 2.7s; 
+}
+
+#letterD {
+  grid-column: 3; 
+  grid-row: 7; 
+  transition-delay: 3s;
+}
+
+#letterX1 {
+  grid-column: 2; 
+  grid-row: 2; 
+  transition-delay: 2.3s;
+  color: #00008B;
+}
+
+#letterX2 {
+  grid-column: 2; 
+  grid-row: 6; 
+  transition-delay: 2.3s;
+  color: #00008B;
+}
+
+#letterContainer:hover .new-letter {
+  opacity: 0;
+}
+
+.container:hover .letter {
+  transform: translateY(-10%);
+}
+
+.container:hover #letterF {
+  transform: translateY(-10%);
+  transition-delay: 0.3s;
+}
+
+.container:hover #letterL {
+  transform: translateY(-10%);
+  transition-delay: 0.6s;
+}
+
+.container:hover #letterW1 {
+  transform: translateY(-10%);
+  transition-delay: 0.9s;
+}
+
+.container:hover #letterE {
+  transform: translateY(-10%);
+  transition-delay: 1.2s;
+}
+
+.container:hover #letterR1 {
+  transform: translateY(-10%);
+  transition-delay: 1.5s;
+}
+
+.container:hover #letterS {
+  transform: translateY(-10%);
+  transition-delay: 1.8s;
+}
+
+.container:hover #letterW2 {
+  transform: translateY(-10%);
+  transition-delay: 2.1s;
+}
+
+.container:hover #bindestrich {
+  transform: translateY(-20%);
+  transition-delay: 2.1s;
+}
+
+.container:hover #letterR2 {
+  transform: translateY(-10%);
+  transition-delay: 2.7s;
+}
+
+.container:hover #letterD {
+  transform: translateY(-10%);
+  transition-delay: 3s;
+}
+
+.container:hover #letterX1 {
+  transform: translateY(-10%);
+  transition-delay: 2.3s;
+  color: #00008B;
+}
+
+.container:hover #letterX2 {
+  transform: translateY(-10%);
+  transition-delay: 2.3s;
+  color: #00008B;
+}
+
